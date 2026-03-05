@@ -56,6 +56,6 @@ jobs:
 
           script: |
             docker pull viswanathamsrilekya/node-ci-demo:latest
-            docker stop node-app || true
-            docker rm node-app || true
-            docker run -d -p 3000:3000 --name node-app viswanathamsrilekya/node-ci-demo:latest
+            docker stop node-ci-demo || true
+            docker rm node-ci-demo || true
+            docker run -d -p 3000:3000 --name node-ci-demo viswanathamsrilekya/node-ci-demo:latest
